@@ -19,13 +19,13 @@ class Sell{
     public synchronized void sell(String name){
         try{
             Thread.sleep(3000);
-            System.out.println(name);
+            System.out.print(name+":");
         }catch(InterruptedException e) {}
         if(pork<10 && beef<10 && vegetable<10){
             System.out.println("水餃賣完了");
             System.exit(0);
         }else{
-            int sell=(int)(Math.random()*40)+10;
+            int sell=(int)(Math.random()*41)+10;
             int dumpling=(int)(Math.random()*3)+1;
             switch(dumpling){
                 case 1:
